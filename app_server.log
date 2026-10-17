@@ -1,0 +1,19 @@
+2026-10-16 08:00:01.120 [main] INFO  com.app.service.Bootstrap - Initializing App Server v3.4.1 on port 8080
+2026-10-16 08:00:02.450 [main] INFO  com.app.db.Pool - Connected to PostgreSQL master pool (pool_size=20, timeout=5000ms)
+2026-10-16 08:00:03.010 [main] INFO  com.app.service.Bootstrap - Service readiness probe OK
+2026-10-16 08:05:12.780 [http-exec-1] INFO  com.app.controller.OrderController - Received checkout order #89211 from customer user_5910
+2026-10-16 08:05:14.230 [http-exec-1] WARN  com.app.payment.StripeClient - Payment gateway response delayed (latency=1450ms)
+2026-10-16 08:05:14.990 [http-exec-1] INFO  com.app.controller.OrderController - Order #89211 completed successfully
+2026-10-16 08:12:30.110 [http-exec-4] INFO  com.app.controller.InventoryController - Checking SKU_9082 stock quantity
+2026-10-16 08:14:00.670 [http-exec-7] ERROR com.app.auth.TokenValidator - JWT signature validation failed: expired token
+2026-10-16 08:14:00.671 [http-exec-7] WARN  com.app.security.RateLimiter - IP 203.0.113.88 exceeded 100 req/min threshold
+2026-10-16 08:20:15.340 [worker-pool-2] ERROR com.app.worker.EmailWorker - Failed to send dispatch email to customer@corp.com
+java.net.ConnectException: Connection refused: smtp.internal.corp:587
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(SocketChannelImpl.java:876)
+	at com.app.worker.EmailWorker.deliver(EmailWorker.java:142)
+2026-10-16 08:22:01.002 [http-exec-2] INFO  com.app.controller.HealthController - Health check ping OK (200)
+2026-10-16 08:25:40.910 [http-exec-9] ERROR com.app.db.QueryRunner - Query timeout after 30000ms: SELECT * FROM transactions WHERE status = 'PENDING'
+2026-10-16 08:25:41.005 [http-exec-9] FATAL com.app.service.TransactionManager - Deadlock detected in account balance reconciliation
+2026-10-16 08:30:11.450 [metrics-cron] INFO  com.app.metrics.PrometheusExporter - Scraping metrics: active_threads=14, jvm_heap_used=64%
+2026-10-16 08:31:00.010 [http-exec-3] WARN  com.app.cache.RedisCluster - Secondary node heartbeat missed, triggering election
+2026-10-16 08:31:05.120 [http-exec-3] INFO  com.app.cache.RedisCluster - Secondary node rejoined cluster cleanly
