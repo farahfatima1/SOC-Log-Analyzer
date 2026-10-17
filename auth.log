@@ -1,0 +1,18 @@
+Oct 16 06:25:01 debian CRON[1284]: (root) CMD (test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily ))
+Oct 16 07:12:33 debian sshd[4912]: Accepted publickey for sysadmin from 192.168.1.50 port 54821 ssh2: RSA SHA256:abc123XYZ
+Oct 16 07:12:33 debian sshd[4912]: pam_unix(sshd:session): session opened for user sysadmin by (uid=0)
+Oct 16 07:14:02 debian sudo: sysadmin : TTY=pts/0 ; PWD=/home/sysadmin ; USER=root ; COMMAND=/bin/systemctl restart nginx
+Oct 16 07:14:02 debian sudo: pam_unix(sudo:session): session opened for user root by sysadmin(uid=0)
+Oct 16 07:14:05 debian sudo: pam_unix(sudo:session): session closed for user root
+Oct 16 08:01:10 debian sshd[5210]: Invalid user admin from 185.220.101.5 port 41203
+Oct 16 08:01:12 debian sshd[5210]: Failed password for invalid user admin from 185.220.101.5 port 41203 ssh2
+Oct 16 08:01:15 debian sshd[5214]: Failed password for invalid user root from 185.220.101.5 port 41208 ssh2
+Oct 16 08:01:18 debian sshd[5218]: Failed password for invalid user test from 185.220.101.5 port 41212 ssh2
+Oct 16 08:01:21 debian sshd[5222]: Failed password for invalid user ubuntu from 185.220.101.5 port 41216 ssh2
+Oct 16 08:01:25 debian sshd[5225]: Received disconnect from 185.220.101.5 port 41216:11: Bye Bye [preauth]
+Oct 16 08:15:40 debian sshd[5430]: Failed password for devops from 198.51.100.99 port 58912 ssh2
+Oct 16 08:15:45 debian sshd[5430]: Accepted password for devops from 198.51.100.99 port 58912 ssh2
+Oct 16 08:15:45 debian sshd[5430]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Oct 16 08:30:00 debian sshd[5601]: Invalid user oracle from 45.33.32.156 port 39811
+Oct 16 08:30:02 debian sshd[5601]: Failed password for invalid user oracle from 45.33.32.156 port 39811 ssh2
+Oct 16 08:45:12 debian sudo: devops : TTY=pts/1 ; PWD=/home/devops ; USER=root ; COMMAND=/usr/bin/apt update
